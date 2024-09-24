@@ -67,6 +67,7 @@ public class StepDefinations extends Utils {
     public void in_response_body_is(String keyValue, String Expectedvalue)
     {
         assertEquals(getJsonPath(response,keyValue),Expectedvalue);
+        System.out.println("hello");
     }
 
     @Then("verify place_Id created maps to {string} using {string}")
